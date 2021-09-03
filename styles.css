@@ -1,3 +1,5 @@
+/* Styled to meet pictures as sometimes the instructions seemed incomplete */
+
 .square {
     width: 100px;
     height: 100px;
@@ -25,6 +27,10 @@
     margin: 2px;
 }
 
+/* left flexThree class aligned to right since no other instructions were given;
+could be aligned to left side of output page by adding a
+justify-content: flex-end; */
+
 .flexThree {
     display: flex;
     flex-direction: row-reverse;
@@ -34,12 +40,14 @@
     margin: 2px;
 }
 
+/* added flex-wrap: wrap; even though not directly stated in instructions to match
+picture */
+
 .flexFour {
     display: flex;
     flex-wrap: wrap;
     width: 350px;
 }
-
 
 .flexFour .square {
     margin: 5px;
@@ -65,9 +73,13 @@
 .flexSix {
     height: 400px;
     width: 500px;
-    background-color: #f1f1f1;
+    display: flex;
     flex-direction: column;
+    background-color: #f1f1f1;
 }
+
+/* Flex is used across all child elements, so just consolidated display command to
+all divs */
 
 .flexSix div {
     display: flex;
@@ -89,11 +101,14 @@
     justify-content: space-evenly;
 }
 
+/* added #eeeeee bg-color to container to match picture; not included in directions */
+
 .flexSeven {
     height: 400px;
     width: 500px;
     display: flex;
     justify-content: space-between;
+    background-color: #eeeeee;
 }
 
 .flexSeven div {
@@ -125,6 +140,8 @@
     display: flex;
     background-color: #eeeeee;
 }
+
+/* all children use flex, so assigned to div... again */
 
 .flexEight div {
     display: flex;
